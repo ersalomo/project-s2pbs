@@ -1,4 +1,5 @@
 import '../scripts/views/auth/AuthPage'
+import '../styles/style.css'
 
 export function load(){
     const mainContent = document.querySelector('#content')

@@ -110,7 +110,7 @@ class AuthPage extends HTMLElement {
 					<button>Login</button>
 				</form>
 			</div>
-	</div>
+	    </div>
         `);
     }
 }
