@@ -1,10 +1,11 @@
 import $ from 'jquery'
 
-export default class AuthController {
-    constructor({elementForm}){
-        this._elementForm = elementForm
-    }
-    login(){
+
+const AuthController = {
+    init({element}){
+        this._elementForm = element
+    },
+    login: () => {
         $(this._elementForm).on('submit',(e)=>{
             $.ajax({
             url: e.target.attr('action'),
@@ -18,6 +19,9 @@ export default class AuthController {
             error: function(res){},
            })
         })
-        
-    }
+    },
+    register: () => {
+    },
 }
+
+export default AuthController
