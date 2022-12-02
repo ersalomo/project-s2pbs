@@ -1,26 +1,23 @@
-import $ from 'jquery'
-
+import path from 'path'
 
 const AuthController = {
-    init({element}){
-        this._elementForm = element
-    },
-    login: () => {
-        $(this._elementForm).on('submit',(e)=>{
-            $.ajax({
-            url: e.target.attr('action'),
-            method: e.target.attr('method'),
-            data: new FormData(e.target),
-            contentType: 'json',
-            processData: true,
-            beforeSend: function(){
-            },
-            success: function(res){},
-            error: function(res){},
-           })
+    index: (req,res) => {
+        // const mainContent = document.querySelector('#content')
+        // const authLoginElement = document.createElement('auth-page')
+        // mainContent.append(authLoginElement)
+        res.status(200).send({
+            status: true,
+            statusCode: res.statusCode,
+            message: res.statusMessage
         })
     },
+    login: () => {
+        
+    },
     register: () => {
+    },
+    logout: () => {
+
     },
 }
 

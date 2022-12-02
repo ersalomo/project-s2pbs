@@ -1,4 +1,4 @@
-import '../scripts/views/auth/AuthPage'
+import '../scripts/views/auth/AuthPage.js'
 import '../styles/style.css'
 
 export function load(){
