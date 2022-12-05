@@ -1,5 +1,5 @@
-import  { Sequelize } from 'sequelize'
-import CONFIG from '../configs/db.config.js'
+const { Sequelize } = require('sequelize')
+const CONFIG = require('../configs/db.config')
 
 const {HOST,USER,DB,PASSWORD,DIALECT} = CONFIG
 const database = new Sequelize(DB,USER,PASSWORD,{
@@ -7,4 +7,4 @@ const database = new Sequelize(DB,USER,PASSWORD,{
     dialect:DIALECT
 })
 
-export default database
+module.exports = database

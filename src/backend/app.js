@@ -1,10 +1,8 @@
-import express from 'express';
-
-import cors from 'cors'
-import bodyParser from 'body-parser';
-import database from './database/index.db.js'
-import {routes} from './routes/index.route.js'
-// window.addEventListener('DOMContentLoaded',load);
+const express= require('express')
+const cors = require('cors')
+const bodyParser = require('body-parser')
+const database = require('./database/index.db')
+const routes = require('./routes/index.route')
 const app = express();
 const port = process.env.PORT || 3000
 

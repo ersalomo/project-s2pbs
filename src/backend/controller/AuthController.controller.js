@@ -1,5 +1,4 @@
-import path from 'path'
-import {dirname} from 'path'
+const path = require('path')
 
 const AuthController = {
     index: (req,res) => {
@@ -15,4 +14,4 @@ const AuthController = {
     },
 }
 
-export default AuthController
+module.exports =  AuthController

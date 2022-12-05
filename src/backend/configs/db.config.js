@@ -5,4 +5,4 @@ const CONFIG = {
     DB: "s2pbs",
     DIALECT: "mysql",
 }
-export default CONFIG
+module.exports =CONFIG

@@ -1,10 +1,9 @@
-import path from 'path'
-import HtmlWebpackPlugin from 'html-webpack-plugin'
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-// module.exports = {
-  export const common = {
+module.exports = {
   entry: {
-    app: path.resolve(__dirname, 'src/scripts/app.js'),
+    app: path.resolve(__dirname, 'src/frontend/scripts/app.js'),
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -31,7 +30,7 @@ import HtmlWebpackPlugin from 'html-webpack-plugin'
   plugins: [
     /* HTML Webpack Plugin */
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, './src/template/index.html'),
+      template: path.resolve(__dirname, './src/frontend/template/index.html'),
       filename: 'index.html'
     })
   ]
