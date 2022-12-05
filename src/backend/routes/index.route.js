@@ -1,4 +1,4 @@
-const {UserRouter} = require('./user.route.js')
+const UserRouter = require('./user.route.js')
 
 const _routes = [
     ['/auth',UserRouter],
