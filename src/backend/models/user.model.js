@@ -14,14 +14,6 @@ const userModel = database.define("users", {
         type: DataTypes.STRING,
         allowNull: false
     },
-    createdAt: {
-        type: {
-
-        },
-        allowNull: false,
-    },
-    updatedAt: {
-        allowNull: false,
-    }
-})
+    
+},{timestamps: true})
 export default userModel

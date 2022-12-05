@@ -1,5 +1,5 @@
 import express from 'express';
-// import { load } from './index'
+
 import cors from 'cors'
 import bodyParser from 'body-parser';
 import database from './database/index.db.js'

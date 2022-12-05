@@ -1,7 +1,8 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+import path from 'path'
+import HtmlWebpackPlugin from 'html-webpack-plugin'
 
-module.exports = {
+// module.exports = {
+  export const common = {
   entry: {
     app: path.resolve(__dirname, 'src/scripts/app.js'),
   },
