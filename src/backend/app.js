@@ -18,5 +18,5 @@ database.sync({force: true}).then((res)=>{ //force = tabel yang sudah ada di dro
 routes(app)
 
 app.listen(port,()=>{
-    console.info(`Server listening on ${port}`)
+    console.info(`Server listening on http://localhost:${port}`)
 })
