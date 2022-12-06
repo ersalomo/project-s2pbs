@@ -13,6 +13,10 @@
     },
     "rules": {
         "strict":"off",
-        "comma-dangle":"off"
+        "comma-dangle":"off",
+        "no-underscore-dangle":"off",
+        "linebreak-style":"off",
+        "semi":"off",
+        "object-curly-newline":"off"
     }
 }

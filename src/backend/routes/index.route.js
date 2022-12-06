@@ -1,15 +1,15 @@
-const UserRouter = require('./user.route.js')
+const UserRouter = require('./user.route')
 
 const _routes = [
-    ['/auth',UserRouter],
-    // []
-]
+  ['/auth', UserRouter],
+  // []
+];
 
 const routes = (app) => {
-    _routes.forEach((route) => {
-        const [url,router] = route
-        app.use(url,router)
-    })
-    
+  _routes.forEach((route) => {
+    const [url, router] = route
+    app.use(url, router)
+  })
 }
+
 module.exports = routes
