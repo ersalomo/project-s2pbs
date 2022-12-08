@@ -1,6 +1,6 @@
-const db = require('../database/index.db')
 const uuidv4 = require('uuid').v4
 const bcrypt = require('bcrypt')
+const db = require('../database/index.db')
 
 const AuthController = {
   index: (req, res) => {
@@ -36,7 +36,7 @@ const AuthController = {
           message: 'error'
         })
       })
-    }else{
+    } else {
       return res.status(422).send({
         status: false,
         statusCode: res.statusCode,
