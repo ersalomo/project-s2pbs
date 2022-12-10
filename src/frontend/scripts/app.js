@@ -1,3 +1,3 @@
-import {load} from './index'
+import load from './index'
 
-window.addEventListener('DOMContentLoaded',load)
+window.addEventListener('DOMContentLoaded', load)
